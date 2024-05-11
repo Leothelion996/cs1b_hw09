@@ -20,10 +20,19 @@ class fractionType
   public:
     fractionType::fractionType(int num, int denom);
 
+    // Overload arithmetic operators
+    fractionType operator+(const fractionType& FracInput) const;
+    fractionType operator/(const fractionType& FracInput) const;
+    fractionType operator-(const fractionType& FracInput) const;
+    fractionType operator*(const fractionType& FracInput) const;
     
+
   private:
     int numerator;
     int denominator;
+
+
+    
 };
 
 
